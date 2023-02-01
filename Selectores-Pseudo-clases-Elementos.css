@@ -1,0 +1,33 @@
+.header{
+    text-align: center;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.button::before {
+    content: "pasa por encima";
+}
+
+.button:hover {
+    background-color: darkgreen;
+    color: aliceblue;
+}
+
+.button:hover::before {
+    content: "¡hecho!";
+}
